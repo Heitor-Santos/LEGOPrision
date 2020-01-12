@@ -1,7 +1,7 @@
 import time
 import json
 import hashlib
-import uuid
+from uuid import uuid4
 
 class Transaction:
     """Cria uma nova transação
@@ -22,6 +22,7 @@ class Transaction:
         self.sender = sender
         self.receiver = receiver
         self.amount = amount
+
     #determina se uma dada entrada é um uuid válido
     def isValidUuid(self,val):
         try:
@@ -29,9 +30,12 @@ class Transaction:
             return True
         except ValueError:
             return False
+
     def getSender(self):
         return self.sender
+
     def getReceiver(self):
         return self.receiver
+
     def getAmount(self):
         return self.amount
