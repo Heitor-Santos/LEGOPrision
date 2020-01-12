@@ -1,6 +1,6 @@
 # LEGOPrision
-*Blockchain básica para fins de estudo*
-*Baseado em https://github.com/dvf/blockchain*
+_Blockchain básica para fins de estudo_
+_Baseado em https://github.com/dvf/blockchain_
 ## TO-DO
 - Documentar
 - Organizar comentários
