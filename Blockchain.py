@@ -1,17 +1,8 @@
 import time
 import json
 import hashlib
-class Block(object):
-    def __init__(self):
-        self.transactions=[]
-    def newTransaction(self, sender, receiver, amount):
-        currTransaction = {
-            'sender': sender,
-            'receiver': receiver,
-            'amount': amount,
-            'timestamp': time.time()
-        }
-        self.transactions.append(currTransaction)
+from Block import Block
+
 class Blockchain(object):
     def __init__(self):
         self.chain=[]
